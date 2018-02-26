@@ -1,0 +1,79 @@
+html, body { height: 100%; }
+div { box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikipedia_svg_logo.svg/500px-Wikipedia_svg_logo.svg.png") no-repeat center center fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container { background-color: rgba(255,255,255,0.9); min-height: 100%; padding: 20px; }
+
+.title { text-align: center; margin-bottom: 20px; }
+.title h1 { font-size: 22px; margin: 20px 0; }
+.title h4 { margin: 10px 0; }
+
+.search { margin: 50px 0; text-align: center; background-color: rgba(255, 255, 255, 0.5); }
+.results { max-width: 800px; margin: auto; }
+
+
+
+/* INPUT */
+input { outline: none; }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button { display: none; }
+input::-webkit-input-placeholder { color: transparent; }
+
+#search-input, #random-wiki {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  border: solid 1px #ccc;
+
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+#random-wiki {
+  background-color: #fff;
+  padding: 5px 10px;
+  -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#random-wiki a {
+  color: #555;
+  text-decoration: none;
+}
+
+#search-input {
+	background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 6px center;
+	padding: 5px 10px;
+	width: 10px;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+#search-input:focus {
+	width: 130px;
+  padding: 5px 10px 5px 30px;
+
+  -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#search-input:hover, #random-wiki:hover, #search-input:focus, #random-wiki:focus {
+  background-color: #fff;
+  border-color: #66CC75;
+
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
